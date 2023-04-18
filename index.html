@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Khand:wght@500&family=Tangerine:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			.body {
+				display: grid;
+				place-items: center;
+				height: 100vh;
+			}
+			#title {
+				font-family: 'Tangerine', sans-serif;
+				font-size: 18rem;
+				width: 55%;
+			}
+
+			@media screen and (max-width: 600px) {
+				#title {
+					font-size: 6rem;
+					width: 80%;
+				}
+			}
+		</style>
+		<title>Arendou</title>
+	</head>
+	<body class="body">
+		<h1 id="title">
+			aren <span id="d">d</span>ou <span id="wait">.</span>
+		</h1>
+
+		<script>
+			var dots = window.setInterval(function () {
+				var wait = document.getElementById('wait')
+				if (wait.innerHTML.length > 2) wait.innerHTML = ''
+				else wait.innerHTML += '.'
+			}, 500)
+		</script>
+	</body>
+</html>
